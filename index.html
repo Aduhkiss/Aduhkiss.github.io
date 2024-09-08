@@ -1,131 +1,142 @@
-<html lang="en-US">
-    <link rel="icon" href="https://pebblehost.com/src/img/icons/favicon.ico" />
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
-        <title>Join LEAFED.CC</title>
-        <style type="text/css">
-            @import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
-            html,
-            body {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                background-color: #000000;
-            }
-            @keyframes fade-in-bg {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-            body {
-                background-image: url("https://pebblehost.com/src/img/layout/hostedby.png");
-                background-size: cover;
-                background-position-x: center;
-                animation: fade-in-bg 0.7s ease-in;
-                opacity: 1;
-                font-family: Helvetica, Arial, sans-serif;
-                font-size: 100%;
-            }
-            .black-overlay {
-                background-color: #000000;
-            }
-            h1 {
-                font-size: 5.5em;
-                color: #d8d8d8;
-                text-align: center;
-            }
-            p {
-                font-size: 1.5em;
-                color: #d8d8d8;
-                text-align: center;
-                margin: 0px;
-                width: max-content;
-            }
-            button.button-secondary,
-            .button.button-secondary {
-                color: white;
-                border: 2px solid #51ae59;
-                font-size: 20px;
-                border-radius: 0px;
-                transition-property: background-color;
-                transition-duration: 0.25s;
-                transition-timing-function: ease-in-out;
-            }
-            .button.button-secondary:hover {
-                background-color: #51ae59;
-            }
-            button.button-primary,
-            .button.button-primary,
-            button.button-secondary,
-            .button.button-secondary {
-                padding: 12px 16px;
-            }
-            button,
-            .button {
-                display: inline-block;
-                cursor: pointer;
-                line-height: 1;
-                font-size: 14px;
-                font-weight: bold;
-                font-family: Montserrat, sans-serif;
-                text-transform: uppercase;
-                text-align: center;
-                border-radius: 6px;
-            }
-            a {
-                text-decoration: none;
-                transition: color 0.2s, background-color 0.2s;
-            }
-            .wrapper {
-                display: flex;
-                width: 100%;
-                height: 100%;
-                justify-content: center;
-                background-color: rgba(0, 0, 0, 0.2);
-                animation-fill-mode: forwards;
-            }
-            .inner-wrapper {
-                align-self: center;
-                text-align: center;
-                width: min-content;
-                font-family: Montserrat, sans-serif;
-                text-transform: uppercase;
-                padding: 30px;
-                color: white;
-            }
-            .logo {
-                max-width: 500px;
-                margin-top: 20px;
-                margin-bottom: 30px;
-            }
-            @media screen and (max-width: 666px) {
-                .logo {
-                    max-width: 300px;
-                }
-            }
-            h1 {
-                color: #51ae59;
-            }
-            .button-secondary {
-                margin-top: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="wrapper">
-            <div class="inner-wrapper">
-                <h1>LEAFED.CC</h1><br><br>
-                <p>We run a 100% Vanilla Minecraft Survival Server with absolutely no rules.<br>
-                The map has been running since 6/18/2023<br>
-                <br>
-                The Server Version is 1.20 and will continue to support the newest versions of Minecraft Java Edition<br>
-                <br>
-                You can connect to the server with the IP: leafed.cc<br><p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atticus' Genshin World - Element Finder - 0.0.1</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Which Element do you resonate with?</h1>
+        <form id="quizForm">
+            <div class="question">
+                <h2>1. How would your friends describe your personality?</h2>
+                <label><input type="radio" name="q1" value="A"> Calm and adaptable</label>
+                <label><input type="radio" name="q1" value="B"> Strong and reliable</label>
+                <label><input type="radio" name="q1" value="C"> Energetic and dynamic</label>
+                <label><input type="radio" name="q1" value="D"> Caring and nurturing</label>
+                <label><input type="radio" name="q1" value="E"> Flexible and fluid</label>
+                <label><input type="radio" name="q1" value="F"> Passionate and fiery</label>
+                <label><input type="radio" name="q1" value="G"> Cool and composed</label>
             </div>
-        </div>
-    </body>
+            <div class="question">
+                <h2>2. What’s your ideal way to spend a day off?</h2>
+                <label><input type="radio" name="q2" value="A"> Exploring new places and feeling the wind in your hair</label>
+                <label><input type="radio" name="q2" value="B"> Building or creating something lasting and meaningful</label>
+                <label><input type="radio" name="q2" value="C"> Engaging in high-energy activities or sports</label>
+                <label><input type="radio" name="q2" value="D"> Spending time in nature, perhaps gardening or hiking</label>
+                <label><input type="radio" name="q2" value="E"> Near water, swimming, or just relaxing by a lake</label>
+                <label><input type="radio" name="q2" value="F"> Cooking a delicious meal or enjoying a bonfire</label>
+                <label><input type="radio" name="q2" value="G"> Curling up with a good book in a cozy, cool environment</label>
+            </div>
+            <div class="question">
+                <h2>3. What kind of power would you most like to have?</h2>
+                <label><input type="radio" name="q3" value="A"> Control over the wind</label>
+                <label><input type="radio" name="q3" value="B"> The ability to manipulate the earth</label>
+                <label><input type="radio" name="q3" value="C"> Harnessing electricity</label>
+                <label><input type="radio" name="q3" value="D"> Influencing plant life and nature</label>
+                <label><input type="radio" name="q3" value="E"> Mastering water and healing</label>
+                <label><input type="radio" name="q3" value="F"> Commanding fire</label>
+                <label><input type="radio" name="q3" value="G"> Creating and controlling ice</label>
+            </div>
+            <div class="question">
+                <h2>4. Which environment do you feel most at home in?</h2>
+                <label><input type="radio" name="q4" value="A"> High up in the mountains or open plains</label>
+                <label><input type="radio" name="q4" value="B"> Among rocks and caves</label>
+                <label><input type="radio" name="q4" value="C"> During a thunderstorm</label>
+                <label><input type="radio" name="q4" value="D"> In a forest or jungle</label>
+                <label><input type="radio" name="q4" value="E"> By the sea, river, or lake</label>
+                <label><input type="radio" name="q4" value="F"> Around a campfire or in a warm, sunny place</label>
+                <label><input type="radio" name="q4" value="G"> In a snowy landscape</label>
+            </div>
+            <div class="question">
+                <h2>5. What is your approach to solving problems?</h2>
+                <label><input type="radio" name="q5" value="A"> Thinking on your feet and going with the flow</label>
+                <label><input type="radio" name="q5" value="B"> Staying grounded and tackling issues head-on</label>
+                <label><input type="radio" name="q5" value="C"> Quick thinking and acting decisively</label>
+                <label><input type="radio" name="q5" value="D"> Finding a peaceful and harmonious solution</label>
+                <label><input type="radio" name="q5" value="E"> Going with the flow and adapting as needed</label>
+                <label><input type="radio" name="q5" value="F"> Taking bold, direct action</label>
+                <label><input type="radio" name="q5" value="G"> Staying calm and analyzing the situation carefully</label>
+            </div>
+            <div class="question">
+                <h2>6. What is your biggest strength?</h2>
+                <label><input type="radio" name="q6" value="A"> Adaptability</label>
+                <label><input type="radio" name="q6" value="B"> Stability</label>
+                <label><input type="radio" name="q6" value="C"> Energy</label>
+                <label><input type="radio" name="q6" value="D"> Compassion</label>
+                <label><input type="radio" name="q6" value="E"> Flexibility</label>
+                <label><input type="radio" name="q6" value="F"> Passion</label>
+                <label><input type="radio" name="q6" value="G"> Calmness</label>
+            </div>
+            <div class="question">
+                <h2>7. What is your biggest weakness?</h2>
+                <label><input type="radio" name="q7" value="A"> Indecisiveness</label>
+                <label><input type="radio" name="q7" value="B"> Stubbornness</label>
+                <label><input type="radio" name="q7" value="C"> Impulsiveness</label>
+                <label><input type="radio" name="q7" value="D"> Over-sensitivity</label>
+                <label><input type="radio" name="q7" value="E"> Inconsistency</label>
+                <label><input type="radio" name="q7" value="F"> Short temper</label>
+                <label><input type="radio" name="q7" value="G"> Coldness</label>
+            </div>
+            <button type="button" onclick="calculateResult()">Submit</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        function calculateResult() {
+            const quizForm = document.getElementById('quizForm');
+            const resultDiv = document.getElementById('result');
+            const answers = new FormData(quizForm);
+            const counts = { A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0 };
+
+            for (let value of answers.values()) {
+                counts[value]++;
+            }
+
+            let maxCount = 0;
+            let maxElement = '';
+            for (let element in counts) {
+                if (counts[element] > maxCount) {
+                    maxCount = counts[element];
+                    maxElement = element;
+                }
+            }
+
+            let elementName = '';
+            switch (maxElement) {
+                case 'A':
+                    elementName = 'You are an Anemo vision holder!';
+                    break;
+                case 'B':
+                    elementName = 'You are a Geo vision holder!';
+                    break;
+                case 'C':
+                    elementName = 'You are an Electro vision holder!';
+                    break;
+                case 'D':
+                    elementName = 'You are a Dendro vision holder';
+                    break;
+                case 'E':
+                    elementName = 'You are a Hydro vision holder!';
+                    break;
+                case 'F':
+                    elementName = 'You are a Pyro vision holder!';
+                    break;
+                case 'G':
+                    elementName = 'You are a Cryo vision holder!';
+                    break;
+            }
+
+            resultDiv.textContent = `${elementName}`;
+            resultDiv.style.display = 'block';
+        }
+    </script>
+	
+	<footer>
+		v0.0.2
+	</footer>
+</body>
 </html>
